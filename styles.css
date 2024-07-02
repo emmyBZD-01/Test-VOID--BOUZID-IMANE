@@ -704,7 +704,9 @@ line-height: 54px;
             opacity: .7;
         }
     }
-
+.PreFooter button{
+    background-color: #7A00E6;
+}
 
 
 .Footer {
@@ -792,6 +794,36 @@ line-height: 54px;
             text-align: center;
             font-size: 14px;
             font-weight: 400;
+        }
+    }
+}
+
+
+@media (max-width: 1010px) {
+    .PreFooter {
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px) {
+    .PreFooter {
+        width: 80%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .PreFooter {
+        width: 90%;
+        gap: 10px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        p{
+            margin: 20px 0;
+            font-size: 13px;
         }
     }
 }
