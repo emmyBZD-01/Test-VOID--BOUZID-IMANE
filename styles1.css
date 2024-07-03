@@ -189,7 +189,8 @@ body {
     color: #fff;
     text-align: center;
     cursor: pointer; /* Change le curseur pour indiquer que le bouton est cliquable */
-    align-self: flex-start; /* Aligne le bouton à gauche */
+    align-self: flex-start;
+    border: 0; /* Aligne le bouton à gauche */
 }
 
 @media (max-width: 768px) {
