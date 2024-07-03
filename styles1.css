@@ -2,7 +2,7 @@
 
 body {
     background-color: white;
-    font-family: 'Arial', sans-serif;
+    
 }
 
 * {
@@ -133,8 +133,10 @@ body {
 
 
 
-.main{
-    height: 600px;
+
+
+.main {
+    height: 100vh; /* Utilise la hauteur totale de la fenêtre */
     width: 100%;
     background: url(/hero-img.jpeg);
     background-position: center;
@@ -143,63 +145,79 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
+    padding: 15px; /* Ajoute du padding pour éviter que le contenu ne touche les bords */
 }
 
-.main div{
-    
-    width: 590px;
-    height: 452px;
-    
+.main div {
+    width: 100%;
+    max-width: 590px; /* Limite la largeur maximale pour les grands écrans */
+    height: auto; /* Permet à la hauteur de s'ajuster en fonction du contenu */
     background-color: #fff;
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     border-radius: 8px;
-    position: absolute;
-    left: 128;
-    transform: translate(-50%);
+    position: relative; /* Change de position absolute à relative */
+    transform: none; /* Retire la transformation */
+    box-sizing: border-box; /* Assure que le padding est inclus dans la largeur totale */
 }
-.main h2{
-    display: block;
-    width: 512.61px;
-    height: 216px;
-    top: 31,75px;
-    left: 32px;
-    font-family: work sans ;
+
+.main h2 {
+    font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 44.44px;
-    line-height: 72px;
+    font-size: 2em; /* Utilise des unités relatives pour le texte */
+    line-height: 1.2em; /* Utilise des unités relatives pour la hauteur de ligne */
     color: #000000;
 }
-.main p{
-    display: block;
-    width: 519,28px;
-    height: 96px;
-    top: 264px;
-    left: 32px;
-    font-family: work sans;
+
+.main p {
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 14,5px;
-    line-height: 24px;
-    color:#0D0D0D;
+    font-size: 1em; /* Utilise des unités relatives pour le texte */
+    line-height: 1.5em; /* Utilise des unités relatives pour la hauteur de ligne */
+    color: #0D0D0D;
 }
-.main button{
-    width: 146.23px;
-    height: 44px;
-    top: 376px;
-    left:32px;
+
+.main button {
+    width: auto; /* Permet au bouton de s'ajuster à son contenu */
+    height: auto; /* Permet au bouton de s'ajuster à son contenu */
+    padding: 10px 20px;
     border-radius: 4px;
     background-color: #7A00E6;
-    padding: 10px 20px;
-    margin-top: -15px ;
-    font-size: 14.25px;
+    font-size: 1em; /* Utilise des unités relatives pour le texte */
     color: #fff;
     text-align: center;
-
+    cursor: pointer; /* Change le curseur pour indiquer que le bouton est cliquable */
+    align-self: flex-start; /* Aligne le bouton à gauche */
 }
+
+@media (max-width: 768px) {
+    .main div {
+        width: 100%; /* Occupe toute la largeur disponible */
+        padding: 20px; /* Réduit le padding pour les petits écrans */
+    }
+
+    .main h2 {
+        font-size: 1.5em; /* Réduit la taille du texte pour les petits écrans */
+    }
+
+    .main p {
+        font-size: 0.875em; /* Réduit la taille du texte pour les petits écrans */
+    }
+
+    .main button {
+        font-size: 0.875em; /* Réduit la taille du texte pour les petits écrans */
+        padding: 8px 16px; /* Réduit le padding pour les petits écrans */
+    }
+}
+
+
+
+
+
+
+
 .main2{
     width: 80%;
     background-color: #fff;
