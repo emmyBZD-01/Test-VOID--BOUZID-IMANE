@@ -211,7 +211,7 @@ body {
 .sectionUne{
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 10px;
     
     
     justify-content: center;
