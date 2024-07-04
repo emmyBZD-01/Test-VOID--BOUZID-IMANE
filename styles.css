@@ -471,18 +471,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 10%;
 }
 
-.card {
+.cards-container .card {
+    position: relative;
+    background-color: #fff;
     flex: 1;
     min-width: 300px;
     max-width: 32%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+    border: 1px solid black;
     border-radius: 8px;
     overflow: hidden;
-    background-color: #fff;
 }
 
 .card img {
@@ -491,12 +493,17 @@ body {
 }
 
 .card h3 {
-    margin: auto;
+    margin: 0 auto 15px auto;
     font-size: 22.31px;
     line-height: 36px;
     font-weight: 700;
     color: #333;
     width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .card p {
@@ -504,30 +511,50 @@ body {
     font-size: 14.63px;
     line-height: 24px;
     width: 90%;
-    color:
-        #0D0D0D;
-}
-
-.card a {
-    display: inline-block;
-    margin: 20px;
-
-    font-size: 1rem;
-    color: #7A00E6;
-    text-decoration: none;
-}
-
-.card a i {
-    margin-left: 5px;
+    color: #0D0D0D;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
 
 .cards-container .card a {
+    position: absolute;
+    color: black;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+
+.cards-container .card a i {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #7A00E6;
+    transition: .4s;
+}
+
+.cards-container .card a:hover {
+    color: var(--main-color);
+}
+
+.cards-container .card a:hover i {
+    transform: translateX(5px);
+}
+
+
+
+/* .cards-container .card a {
     display: inline-block;
     margin: 20px;
     font-size: 1rem;
     color: #7A00E6;
     text-decoration: none;
-}
+} */
 
 .titre {
     display: flex;
@@ -586,7 +613,7 @@ body {
     margin-bottom: 10%;
 }
 
-.card {
+.cards-container1 .card {
     flex: 1;
     min-width: 300px;
     max-width: 32%;
@@ -648,13 +675,13 @@ body {
     color: #7A00E6;
 }
 
-.cards-container .card a {
+/* .cards-container .card a {
     display: inline-block;
     margin: 20px;
     font-size: 1rem;
     color: #7A00E6;
     text-decoration: none;
-}
+} */
 
 .cards-container3 {
     margin: 40px auto;
