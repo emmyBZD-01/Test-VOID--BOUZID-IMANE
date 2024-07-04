@@ -552,8 +552,7 @@ body {
 .cards-container1 .card {
     flex: 1;
     min-width: 300px;
-    max-width: 32%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
     border-radius: 8px;
     overflow: hidden;
     background-color: #fff;
@@ -1127,7 +1126,7 @@ body {
             gap: 20px;
 
             .card {
-                min-width: 80%;
+                min-width: 100%;
             }
         }
     }
@@ -1152,13 +1151,30 @@ body {
         .cards-container1 {
             grid-template-columns: 1fr;
             gap: 20px;
+        }
+    }
+}
 
-            .card {
-                min-width: 100%;
+/* --- reeponsivity for section Four ---  */
+
+@media (max-width: 500px) {
+    .cards-container3 {
+        h1 {
+            font-size: 25px;
+        }
+        .paragraphs{
+            p{
+                font-size: 16px;
+                line-height: 25px;
+            }
+            .icon{
+                bottom: 10px;
             }
         }
     }
 }
+
+/* --- reeponsivity for section Five ---  */
 
 
 /* ----------------------- */
