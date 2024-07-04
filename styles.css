@@ -1085,7 +1085,83 @@ body {
 }
 
 
+/* --- reeponsivity for section Three ---  */
 
+@media (max-width: 1200px) {
+    .cards-container2 {
+
+        .cards-container1 {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+            gap: 5px;
+
+            .card {
+                height: 100%;
+                width: 100%;
+                min-width: 100%;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .cards-container2 {
+        .titre {
+            h2 {
+                font-size: 25px;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .cards-container2 {
+        .cards-container1 {
+            grid-template-columns: 1fr;
+            gap: 20px;
+
+            .card {
+                min-width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .cards-container2 {
+        .titre {
+            flex-direction: column;
+
+            h2 {
+                width: 100%;
+            }
+
+            a {
+                width: 100%;
+                justify-content: flex-end;
+            }
+
+        }
+
+        .cards-container1 {
+            grid-template-columns: 1fr;
+            gap: 20px;
+
+            .card {
+                min-width: 100%;
+            }
+        }
+    }
+}
+
+
+/* ----------------------- */
 @media (max-width: 1010px) {
     .PreFooter {
         width: 70%;
