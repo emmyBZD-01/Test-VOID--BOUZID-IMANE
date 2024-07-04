@@ -1162,12 +1162,14 @@ body {
         h1 {
             font-size: 25px;
         }
-        .paragraphs{
-            p{
+
+        .paragraphs {
+            p {
                 font-size: 16px;
                 line-height: 25px;
             }
-            .icon{
+
+            .icon {
                 bottom: 10px;
             }
         }
@@ -1175,26 +1177,40 @@ body {
 }
 
 /* --- reeponsivity for section Five ---  */
+@media (max-width: 700px) {
+    .cards-container4 {
+        h2 {
+            font-size: 30px;
+        }
 
+        .cards-container {
+            width: 100%;
 
-/* ----------------------- */
-@media (max-width: 1010px) {
-    .PreFooter {
-        width: 70%;
+            .card {
+                width: 100% !important;
+            }
+        }
     }
 }
 
 
+/* --- reeponsivity for section Pre footer ---  */
+
+@media (max-width: 1010px) {
+    .prefooter {
+        width: 70%;
+    }
+}
 
 @media (max-width: 650px) {
-    .PreFooter {
+    .prefooter {
         width: 80%;
         gap: 30px;
     }
 }
 
 @media (max-width: 500px) {
-    .PreFooter {
+    .prefooter {
         width: 90%;
         gap: 10px;
 
