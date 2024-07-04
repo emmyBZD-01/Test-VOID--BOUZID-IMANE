@@ -750,6 +750,9 @@ body {
 
 /* -- section 5 --  */
 
+.cards-container4 .card {
+    padding-bottom: 40px;
+}
 
 .cards-container4 .card .imgcard1 {
     height: 250px;
