@@ -171,7 +171,7 @@ body {
     font-family: work sans ;
     font-weight: 700;
     font-size: 44.44px;
-    line-height: 72px;
+    line-height: 60px;
     color: #000000;
 }
 .main p{
@@ -212,15 +212,18 @@ body {
     display: flex;
     flex-direction: row;
     gap: 100px;
-    display:flex;
-    align-items:center;
+    
+    
     justify-content: center;
     margin-bottom: 80px;
 }
 .sectionUne .text{
     justify-content: space-between;
-    align-items: center;
+    
     padding: 0 20px;
+     display:flex;
+    flex-direction: column;
+    gap: 0px;
 }
 .text{
     flex: 1;
@@ -231,8 +234,9 @@ height: 108px;
 font-family: work sans ;
 font-weight: 700;
 font-size: 33,47px;
-line-height: 54px;
+line-height: 45px;
 color: #000000;
+
 }
 
 .text p{
@@ -246,24 +250,23 @@ color: #000000;
     line-height: 24px;
     color:#0D0D0D;
 }
-.text a{
-    width: 101.61px;
-    height: 20px;
-    top: 326px;
-    font-family: work sans;
-    font-weight: 700;
-    font-size: 14.75px;
-    line-height: 20px;
-    left: 117.41px;
-    color: black;
+.text button {
+    width: fit-content;
     border: 0;
-   
+    background-color: transparent;
+    font-size: 14.75px;
+    font-weight: 700; 
+    background-color: transparent;
+    border: 0;
 }
-.text i{
-    width: 16px;
-    height: 16px;
-    color: #7A00E6;
-    
+
+.text button  i{
+    margin-left: 10px;
+    color:var(--main-color);
+    transition:.4s;
+    cursor:pointer;}
+   .text button i:hover {
+        opacity: .4;
 }
 .image{
     flex: 1;
@@ -285,7 +288,7 @@ color: #000000;
     align-items: center;
     padding: 0 20px;
     gap: 10px;
-    margin-top: 80px;
+
 
 }
 .text2{
@@ -294,19 +297,31 @@ color: #000000;
     flex-direction: column;
     gap: 20px;
     order: 2;
-    margin-left: 50px
+    margin-left: 50px;
+    display:flex;
+    flex-direction: column;
+    gap: 0px;
 }
 .text2 h2{
-    width: 90%;
+    width: 50%;
+    height: 108px;
+    font-family: work sans ;
     font-weight: 700;
-    font-size: 33.47px;
-    line-height: 54px;
-    display: block;
+    font-size: 33,47px;
+    line-height: 45px;
+    color: #000000;
+    
 }
 .text2 p{
+    line-height: 54px;
     width: 80%;
-    line-height: 24px;
+    height: 168px;
+    top: 132px;
+    font-family: work sans;
+    font-weight: 400;
     font-size: 14.88px;
+    line-height: 24px;
+    color:#0D0D0D;
     
 }
 .image2{
@@ -327,26 +342,23 @@ color: #000000;
     position: relative; 
     border-radius: 8px; 
 }
-.text2 a{
-    width: 101.61px;
-    height: 20px;
-    top: 326px;
-    font-family: work sans;
-    font-weight: 700;
-    font-size: 14.75px;
-    line-height: 20px;
-    left: 117.41px;
-    color: black;
+.text2 button {
+    width: fit-content;
     border: 0;
-   
-
-   
+    background-color: transparent;
+    font-size: 14.75px;
+    font-weight: 700; 
+    background-color: transparent;
+    border: 0;
 }
-.text2 i{
-    width: 16px;
-    height: 16px;
-    color: #7A00E6;
-    
+
+.text2 button  i{
+    margin-left: 10px;
+    color:var(--main-color);
+    transition:.4s;
+    cursor:pointer;}
+   .text button i:hover {
+        opacity: .4;
 }
 
 
@@ -357,61 +369,63 @@ color: #000000;
 .sectionTrois{
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 10px;
     display:flex;
-    align-items:center;
+    
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 100px;
 }
 .sectionTrois .text3{
-    justify-content: space-between;
-    align-items: center;
+    
+    
     padding: 0 20px;
+    display:flex;
+    flex-direction: column;
+    gap: 0px;
 
 }
 .text3{
     flex: 1;
 }
 .text3 h2{
-width: 50%;
-height: 108px;
-font-family: work sans ;
-font-weight: 700;
-font-size: 33,47px;
-line-height: 54px;
-color: #000000;
+    width: 50%;
+    height: 108px;
+    font-family: work sans ;
+    font-weight: 700;
+    font-size: 33,47px;
+    line-height: 45px;
+    color: #000000;
+   
 }
 
 .text3 p{
-    line-height: 54px;
+    
     width: 80%;
-    height: 168px;
-    top: 132px;
-    font-family: work sans;
+    
     font-weight: 400;
     font-size: 14.88px;
     line-height: 24px;
     color:#0D0D0D;
-}
-.text3 a{
-    width: 101.61px;
-    height: 20px;
-    top: 326px;
-    font-family: work sans;
-    font-weight: 700;
-    font-size: 14.75px;
-    line-height: 20px;
-    left: 117.41px;
-    color: black;
-    border: 0;
    
 }
-.text3 i{
-    width: 16px;
-    height: 16px;
-    color: #7A00E6;
-    
+.text3 button {
+    width: fit-content;
+    border: 0;
+    background-color: transparent;
+    font-size: 14.75px;
+    font-weight: 700; 
+    background-color: transparent;
+    border: 0;
+}
+
+.text3 button  i{
+    margin-left: 10px;
+    color:var(--main-color);
+    transition:.4s;
+    cursor:pointer;}
+   .text button i:hover {
+        opacity: .4;
 }
 .image3{
     flex: 1;
