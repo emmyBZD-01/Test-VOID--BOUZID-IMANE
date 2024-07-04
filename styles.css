@@ -91,15 +91,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 .main div {
-
     width: 590px;
     height: 452px;
-
     background-color: #fff;
     padding: 30px;
     display: flex;
@@ -164,9 +160,8 @@ body {
 .sectionUne {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
-
-
     justify-content: center;
     margin-bottom: 80px;
 }
@@ -177,6 +172,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.sectionUne img {
+    height: 300px !important;
+    object-fit: cover;
 }
 
 .text {
@@ -249,7 +249,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    gap: 10px;
+    gap: 30px;
 }
 
 .text2 {
@@ -297,6 +297,7 @@ body {
     height: 300px;
     position: relative;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .text2 button {
@@ -339,6 +340,11 @@ body {
     align-items: center;
     margin-top: 80px;
     margin-bottom: 100px;
+}
+
+.sectionTrois img {
+    height: 300px !important;
+    object-fit: cover;
 }
 
 .sectionTrois .text3 {
@@ -856,6 +862,8 @@ body {
 }
 
 
+/* --- reeponsivity for nav bar ---  */
+
 @media (max-width: 1405px) {
     .nav-bar .links a {
         font-size: 12px;
@@ -888,6 +896,8 @@ body {
         display: none;
     }
 }
+
+/* --- reeponsivity for hero section ---  */
 
 @media (max-width: 1200px) {
     .main div {
@@ -945,13 +955,126 @@ body {
     }
 }
 
-
 @media (max-width: 420px) {
     .main div {
         width: 95%;
         right: 2.5%;
     }
 }
+
+/* --- reeponsivity for section one ---  */
+
+@media (max-width: 1400px) {
+
+    .text,
+    .text2,
+    .text3 {
+        h2 {
+            width: 100%;
+            line-height: 35px;
+        }
+
+        p {
+            width: 90%;
+            font-size: 12.88px;
+            color: #0D0D0D;
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    .main2 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 970px) {
+
+    .sectionUne,
+    .sectionDeux,
+    .sectionTrois {
+        display: flex;
+        flex-direction: column;
+
+        .text,
+        .text2,
+        .text3 {
+            width: 70%;
+            order: 2;
+
+            h2,
+            p {
+                width: 100%;
+            }
+        }
+
+        .image,
+        .image2,
+        .image3 {
+            width: 70% !important;
+            max-height: 300px;
+            order: 1;
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+
+    .sectionUne,
+    .sectionDeux,
+    .sectionTrois {
+        display: flex;
+        flex-direction: column;
+
+        .text,
+        .text2,
+        .text3 {
+            width: 80%;
+        }
+
+        .image,
+        .image2,
+        .image3 {
+            width: 80% !important;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .main2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .text,
+    .text2,
+    .text3 {
+        h2 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+    }
+}
+
+
 
 @media (max-width: 1010px) {
     .PreFooter {
